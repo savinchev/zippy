@@ -21,3 +21,25 @@ li{
     padding: 0 8px;
     margin: 0 auto;
 }
+.title{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 40px;
+}
+.text{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+    font-size: 19px;
+}
+a.button{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 11px;
+    max-width: 125px;
+    padding: 15px 23px;
+    border-radius: 3px;
+    background-color: $yellow;
+    border: none;
+    color: #000;
+    text-transform: uppercase;
+}
