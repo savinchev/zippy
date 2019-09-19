@@ -18,11 +18,11 @@ gulp.task('sass', function(){
             .pipe(browserSync.reload({stream: true}))
 });
 
-    //  используется пока нет плагина gulp-cssmin
-    // .pipe(concat('libs.css'))
+
+    // .pipe(concat('libs.min.css'))
     // .pipe(cssmin())    если используется плагин cssmin
     // .pipe(gulp.dest('app/css'))
-
+        //  используется пока нет плагина gulp-cssmin
 gulp.task('style', function(){
     return gulp.src([
         'node_modules/normalize.css/normalize.css',
@@ -68,4 +68,4 @@ gulp.task('watch', function(){
     gulp.watch('app/js/*.js', gulp.parallel('js'))
 });
 
-gulp.task('default', gulp.parallel('script','sass', 'watch', 'browser-sync'));
+gulp.task('default', gulp.parallel('style', 'script', 'sass', 'watch', 'browser-sync'));

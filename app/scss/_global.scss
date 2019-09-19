@@ -35,11 +35,16 @@ a.button{
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
     font-size: 11px;
-    max-width: 125px;
+    width: 125px;
+    height: 43px;
     padding: 15px 23px;
     border-radius: 3px;
     background-color: $yellow;
     border: none;
     color: #000;
     text-transform: uppercase;
+    &:hover{
+        background-color: $purple;
+        color: #fff;
+    }
 }
