@@ -42,3 +42,12 @@
     color: $yellow;
     text-transform: uppercase;
 }
+.header__menu li + li{
+    a{
+        color: #fff;
+        &:hover{
+            color: $yellow;
+        }
+    }
+}
+
