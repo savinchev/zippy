@@ -153,3 +153,53 @@
     }
 }
     // end section welcome
+    // start section projects
+.projects{
+    overflow: hidden;
+    margin-bottom: 80px;
+    &__title{
+        font-size: 44px;
+        text-align: center;
+        margin-bottom: 46px;
+    }
+}
+.projects__inner{
+    display: flex;
+}
+.projects__item{
+    width: 25%;
+    background-color: #efefef;
+    &-img{
+        width: 100%;
+        margin-bottom: 45px;
+    }
+    &-title{
+        margin-bottom: 15px;
+        text-transform: uppercase;
+        font-size: 15px;
+        padding-left: 42px;
+    }
+    &-text{
+        font-size: 14px;
+        line-height: 24px;
+        margin-bottom: 15px;
+        padding-left: 42px;
+        padding-right: 33px;
+    }
+    a{
+        color: #000;
+        background-color: #fff;
+        margin-bottom: 45px;
+        margin-left: 42px;
+        width: 161px;
+    }
+}
+.projects__item:hover{
+    background-color: $yellow;
+    a{
+        color: #fff;
+        background-color: $purple;
+    } 
+}
+
+    // end section projects
