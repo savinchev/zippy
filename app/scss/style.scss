@@ -203,3 +203,40 @@
 }
 
     // end section projects
+    // start section plan
+.plan{
+    margin-bottom: 90px;
+}
+.plan__inner-title{
+    font-size: 44px;
+    margin-bottom: 40px;
+    text-align: center;
+}
+.plan__inner{
+    display: flex;
+    justify-content: space-between;
+}
+.plan__item{
+    max-width: 207px;
+    width: 100%;
+    text-align: center;
+    &-title,
+    &-price{
+        font-size: 15px;
+        margin-bottom: 20px;
+    }
+    &-price{
+        color: #9d9d9d;
+    }
+    &-text{
+        font-size: 10px;
+        line-height: 22px;
+        margin-bottom: 20px;
+    }
+    & a{
+        width: 80px;
+        height: 28px;
+        padding: 9px 10px;
+    }
+}
+    // end section plan
