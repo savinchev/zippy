@@ -277,3 +277,68 @@
     }
 }
     // end section video
+    // start section team
+.team{
+    padding: 75px 0 135px;
+    &__title{
+        font-size: 44px;
+        text-align: center;
+        margin-bottom: 40px;
+    }
+    &__inner{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+}
+.team__item{
+    max-width: 178px;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 60px;
+    position: relative;
+    &-images{
+        width: 173px;
+        height: 173px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin: 0 auto 30px;
+    }
+    &-link{
+        display: none;
+    }
+    &-name{
+        margin-bottom: 15px;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 700;
+        font-size: 15px;
+        text-transform: uppercase
+    }
+    &-position{
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 400;
+        font-size: 15px;
+        color: #9d9d9d;
+    }
+}
+.team__item:hover{
+    .team__item-link{
+        padding: 0 20px;
+        margin: 0 auto;
+        width: 173px;
+        height: 173px;
+        border-radius: 50%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: rgba(98, 73, 124, .79);
+        transition: all 0.3s;
+        position: absolute;
+        top: 0;
+        left: 2px;
+    }
+}
+
+
+    // end section team
