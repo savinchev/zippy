@@ -339,6 +339,70 @@
         left: 2px;
     }
 }
-
-
     // end section team
+    // start section sliderbottom
+.sliderbottom{
+    padding: 75px 0 110px;
+    background-color: #efefef;
+    &__title{
+        font-size: 44px;
+        text-align: center;
+        margin-bottom: 40px;
+    }
+    &__item{
+        max-width: 694px;
+        min-height: 429px;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    &__nav{
+        margin-top: 6px;
+        &-item{
+            max-width: 111px;
+            min-height: 69px;
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+    }
+}
+button.slick-prev.slick-arrow, 
+button.slick-next.slick-arrow{
+    width: 30px;
+    height: 69px;
+    bottom: -110px;
+    top: auto;
+    background-color: #2a2a2a;
+    z-index: 2;
+}
+.slick-prev.slick-arrow{
+    left: 0px;
+}
+.slick-next.slick-arrow{
+    right: 0px;
+}
+.slick-prev.slick-arrow:hover,
+.slick-next.slick-arrow:hover{
+    background-color: $purple;
+}
+.slick-prev:before{
+    background-image: url(../images/icons/leftarrow.png);
+    left: 10px;
+}
+.slick-next:before{
+    background-image: url(../images/icons/rightarrow.png);
+    right: 10px;
+}
+.slick-prev:before, 
+.slick-next:before{
+    content: '';
+    width: 9px;
+    height: 14px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    bottom: 28px;
+}
+    // end section sliderbottom
