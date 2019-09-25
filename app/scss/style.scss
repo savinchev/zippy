@@ -514,3 +514,60 @@ button.slick-next.slick-arrow{
     }
 }
     // end blog
+    // start contact
+.contact{
+    padding-bottom: 50px;
+    &__inner{
+        display: flex;
+        justify-content: center;
+    }
+
+}
+.contact__map{
+    width: 50%;
+    img{
+        width:100%;
+    }  
+}
+.contact__form{
+    width: 50%;
+    padding: 40px 40px 50px 40px;
+    background-color: $yellow;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 10px;
+    &-title{
+        font-size: 44px;
+        margin-bottom: 20px;
+    }
+    form{
+        width: 310px;
+        label{
+            margin-bottom: 10px;
+            display: block;
+            text-transform: uppercase;
+        }
+        input{
+            display: block;
+            margin-bottom: 20px;
+            width: 100%;
+            height: 42px;
+            &.textarea{
+                height: 145px;
+            }
+        }
+        button{
+            height: 42px;
+            width: 100%;
+            border: none;
+            background-color: $purple;
+            color: #fff;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 700;
+            font-size: 10px;
+            text-transform: uppercase;
+            cursor: pointer;
+        }
+    }
+}
+    // end contact

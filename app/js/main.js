@@ -8,7 +8,6 @@ $(function () {
 
   $('.video__slider').slick({
     centerMode: true,
-    centerPadding: '60px',
     slidesToShow: 1,
     arrows: false,
     variableWidth: true
