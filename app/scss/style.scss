@@ -414,7 +414,6 @@ button.slick-next.slick-arrow{
     background-position: center;
     background-size: cover;
     padding: 57px 0 145px;
-    margin-bottom: 70px;
     &__title{
         font-size: 44px;
         color: #fff;
@@ -466,3 +465,52 @@ button.slick-next.slick-arrow{
     }
 }
     // end newsletter
+    // start blog
+.blog{
+    padding: 70px 0 88px;
+    &__title{
+        font-size: 44px;
+        text-align: center;
+        margin-bottom: 50px;
+    }
+    &__inner{
+        display: flex;
+        justify-content: space-between;
+    }
+}
+.blog__item{
+    max-width: 206px;
+    width: 100%;
+    text-align: center;
+    &-image{
+        max-width: 206px;
+        height: 111px;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        margin-bottom: 30px;
+    }
+    &-title{
+        font-size: 14px;
+        text-transform: uppercase;
+        padding: 0 20px;
+        margin-bottom: 20px;
+    }
+    &-date{
+        font-size: 13px;
+        margin-bottom: 20px;
+    }
+    &-text{
+        font-size: 13px;
+        padding: 0 10px;
+        margin-bottom: 30px;
+    }
+    a{
+        background-color: #ececec;
+        &:hover{
+            background-color: $yellow;
+            color: #000;
+        }
+    }
+}
+    // end blog
