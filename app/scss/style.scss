@@ -618,8 +618,10 @@ button.slick-next.slick-arrow{
             width: 30px;
             text-align: center;
             margin-top: 10px;
-            img{
-
+            &:hover{
+                path{
+                    fill: $purple;
+                }
             }
         }
     }
