@@ -25,7 +25,7 @@ $(function () {
     slidesToScroll: 1,
     asNavFor: '.sliderbottom__inner',
     dots: false,
-    centerMode: true,
+    variableWidth: true,
     focusOnSelect: true
   });
 
