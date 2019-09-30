@@ -10,7 +10,13 @@ $(function () {
     centerMode: true,
     slidesToShow: 1,
     arrows: false,
-    variableWidth: true
+    variableWidth: true,
+    responsive: [
+      {
+          breakpoint: 720,
+          settings: "unslick"
+      }
+  ]
   });
 
   $('.sliderbottom__inner').slick({
