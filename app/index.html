@@ -13,12 +13,12 @@
 
 <body>
 
-    <section class="topimage" style="background-image: url(images/topbg.jpg);">
+    <section class="topimage" id="top" style="background-image: url(images/topbg.jpg);">
         <header class="header">
             <div class="container">
                 <div class="header__inner">
                     <div class="header__logo">
-                        <a href="#"><img src="images/logo.png"></a>
+                        <a href="#"><img src="images/logo.png" alt=""></a>
                     </div>
                     <nav class="header__menu">
                         <div class="header__menu-btn">
@@ -63,7 +63,6 @@
                         </div>
                         <div class="slidertop__item-btn">
                             <a class="button" href="#">learn more</a>
-                            <a class="button" href="#">learn more</a>
                         </div>
                     </div>
                     <div class="slidertop__item">
@@ -76,7 +75,6 @@
                         </div>
                         <div class="slidertop__item-btn">
                             <a class="button" href="#">learn more</a>
-                            <a class="button" href="#">learn more</a>
                         </div>
                     </div>
                     <div class="slidertop__item">
@@ -88,7 +86,6 @@
                             This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet.
                         </div>
                         <div class="slidertop__item-btn">
-                            <a class="button" href="#">learn more</a>
                             <a class="button" href="#">learn more</a>
                         </div>
                     </div>
@@ -117,7 +114,7 @@
             <div class="welcome__inner">
                 <div class="welcome__item">
                     <div class="welcome__item-icons">
-                        <img class="icon1" src="images/icons/Bell.png">
+                        <img class="icon1" src="images/icons/Bell.png" alt="">
                     </div>
                     <div class="welcome__item-title title">
                         LOREM IPSUM
@@ -130,7 +127,7 @@
                 </div>
                 <div class="welcome__item">
                     <div class="welcome__item-icons">
-                        <img src="images/icons/letter.png">
+                        <img src="images/icons/letter.png" alt="">
                     </div>
                     <div class="welcome__item-title title">
                         dolor sit
@@ -144,7 +141,7 @@
                 </div>
                 <div class="welcome__item">
                     <div class="welcome__item-icons">
-                        <img src="images/icons/box.png">
+                        <img src="images/icons/box.png" alt="">
                     </div>
                     <div class="welcome__item-title title">
                         consecteture
@@ -468,7 +465,7 @@
                 Newsletter Signup
             </div>
             <div class="newsletter__form">
-                <form action="">
+                <form>
                     <input type="text" placeholder="abc@example.com">
                     <button type="submit">sign up</button>
                 </form>
@@ -540,13 +537,13 @@
                 </div>
                 <form action="#">
                     <label for="username">Name</label>
-                    <input type="text" name="username">
+                    <input type="text" id="username">
                     <label for="email">E-mail address</label>
-                    <input type="text" name="email">
+                    <input type="text" id="email">
                     <label for="subject">Subject</label>
-                    <input type="text" name="subject">
+                    <input type="text" id="subject">
                     <label for="message">Message</label>
-                    <textarea></textarea>
+                    <textarea id="message"></textarea>
                     <button type="submit">Send</button>
                 </form>
             </div>
@@ -620,6 +617,7 @@
         </div>
     </footer>
 
+    <a href="#top" class="scrollup"></a>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="js/libs.min.js"></script>
