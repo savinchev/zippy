@@ -7,8 +7,8 @@ let gulp = require('gulp'),
     uglify = require('gulp-uglify');
     // cssmin = require('gulp-cssmin');
 
-gulp.task('sass', function(){
-    return gulp.src('app/scss/style.scss')
+    gulp.task('sass', function(){
+    return gulp.src('app/scss/**/*.scss')
             .pipe(sass({outputStyle: 'compressed'}))
             .pipe(rename({suffix: '.min'}))
             .pipe(autoprefixer({
@@ -18,16 +18,21 @@ gulp.task('sass', function(){
             .pipe(browserSync.reload({stream: true}))
 });
 
-// gulp.task('style', function(){
-//     return gulp.src([
-//         'node_modules/normalize.css/normalize.css',
-//         'node_modules/slick-carousel/slick/slick.css',
-//         'node_modules/magnific-popup/dist/jquery.magnific-popup.css'
-//     ])
-//         .pipe(concat('libs.min.css'))
-//         .pipe(cssmin())
-//         .pipe(gulp.dest('app/css'))
-// });
+
+    // .pipe(concat('libs.min.css'))
+    // .pipe(cssmin())    если используется плагин cssmin
+    // .pipe(gulp.dest('app/css'))
+        //  используется пока нет плагина gulp-cssmin
+gulp.task('style', function(){
+    return gulp.src([
+        'node_modules/normalize.css/normalize.css',
+        'node_modules/slick-carousel/slick/slick.css',
+        'node_modules/slick-carousel/slick/slick-theme.css',
+        'node_modules/magnific-popup/dist/magnific-popup.css'
+    ])
+        .pipe(concat('libs.css'))
+        .pipe(gulp.dest('app/css'))
+});
 
 gulp.task('script', function(){
     return gulp.src([
@@ -63,4 +68,4 @@ gulp.task('watch', function(){
     gulp.watch('app/js/*.js', gulp.parallel('js'))
 });
 
-gulp.task('default', gulp.parallel('script','sass', 'watch', 'browser-sync'));
+gulp.task('default', gulp.parallel('style', 'script', 'sass', 'watch', 'browser-sync'));
