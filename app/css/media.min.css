@@ -1,0 +1,1 @@
+@media (max-width: 770px){.header__menu-btn{display:block}.header__menu>ul{display:none;position:absolute;left:0;right:0;width:100%}.header__menu ul li{display:block;text-align:center}}@media (min-width: 770px){.header__menu>ul{display:block !important}}
